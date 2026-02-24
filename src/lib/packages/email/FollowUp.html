@@ -1,0 +1,78 @@
+<html lang="en">
+	<head>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Montserrat', sans-serif;
+				background: #f2f0ef;
+				color: #333;
+				margin: 0;
+			}
+
+			header {
+				background-color: #f4e5ca;
+				height: 6rem;
+				width: 100%;
+				padding: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			main {
+				padding: 20px;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				font-weight: 600;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			img {
+				aspect-ratio: 1/1;
+				height: 4rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="https://50statestravel.com/">
+				<img src="../../assets/logos/50statesTransparent.svg" alt="50 States Travel" />
+			</a>
+			<nav>
+				<ul>
+					<li><a href="https://50statestravel.com/">Our Site</a></li>
+					<li><a href="mailto:meela@50statestravel.com">Support</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Thank you for your message!</h1>
+			<p>
+				Hello, {{params.firstName}} {{params.lastName}}, we have received your message and one of
+				our associates will respond shortly.
+			</p>
+		</main>
+	</body>
+</html>
