@@ -59,7 +59,9 @@ export async function sendEmail(
 				success: true,
 				messageId: (await response.json()).messageId
 			};
-		else
+		else {
+			console.error(await response.text());
+
 			return {
 				success: false,
 				error: {
@@ -67,6 +69,7 @@ export async function sendEmail(
 					message: response.statusText
 				}
 			};
+		}
 	} catch (e) {
 		return {
 			success: false,
