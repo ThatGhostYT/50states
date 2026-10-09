@@ -164,12 +164,7 @@
 <section id="contact" class="dark">
 	<div class="content-container">
 		<h1>Contact Us!</h1>
-		<p>
-			For help planning your next trip, contact us at: <a target="_blank" href="mailto:contact@50statestravel.com"
-				>contact@50statestravel.com</a
-			>.
-		</p>
-		<!-- {#if form?.success}
+		{#if form?.success}
 			<p>Thank you for reaching out! We'll get back to you as soon as possible.</p>
 		{:else}
 			<p>
@@ -201,7 +196,7 @@
 			<div class="button-container">
 				<button type="submit">Send</button>
 			</div>
-		</form> -->
+		</form>
 	</div>
 </section>
 
