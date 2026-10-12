@@ -191,7 +191,7 @@
 			</label>
 			<label>
 				Message
-				<textarea name="message" placeholder="Super awesome trip plan">{message}</textarea>
+				<textarea name="message" placeholder="My trip idea">{message}</textarea>
 			</label>
 			<div class="button-container">
 				<button type="submit">Send</button>
